@@ -15,7 +15,7 @@ public class ControladorHola {
     
     @GetMapping("/")
     public String holaMundo(){
-        return "Mi primer servicio REST :D";
+        return "Mi primer servicio REST :D xD ";
     }
     
 }
