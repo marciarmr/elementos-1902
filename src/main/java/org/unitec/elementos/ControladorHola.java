@@ -9,13 +9,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
 @RestController
 @RequestMapping("/")
+
 public class ControladorHola {
-    
+ 
     @GetMapping("/")
     public String holaMundo(){
-        return "Mi primer servicio REST :D xD ";
-    }
-    
+        return "Mi primer servicio REST :D";
+    } 
 }
+
