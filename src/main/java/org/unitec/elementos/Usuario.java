@@ -7,35 +7,30 @@ package org.unitec.elementos;
 
 import org.springframework.data.annotation.Id;
 
+
+
 /**
  *
- * @author T-107
+ * @author campitos
  */
 public class Usuario {
-    @Id
+
+@Id
     private Integer id;
     private String nombre;
     private Localizacion localizacion;
 
-    public Usuario(Integer id, String nombre) {
-        this.id = id;
-        this.nombre = nombre;
-    }
-    
     @Override
     public String toString() {
         return "Usuario{" + "id=" + id + ", nombre=" + nombre + ", localizacion=" + localizacion + '}';
     }
-   
+
     public Usuario() {
     }
 
-    public Localizacion getLocalizacion() {
-        return localizacion;
-    }
-
-    public void setLocalizacion(Localizacion localizacion) {
-        this.localizacion = localizacion;
+    public Usuario(Integer id, String nombre) {
+        this.id = id;
+        this.nombre = nombre;
     }
 
     public Integer getId() {
@@ -53,4 +48,13 @@ public class Usuario {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
+    public Localizacion getLocalizacion() {
+        return localizacion;
+    }
+
+    public void setLocalizacion(Localizacion localizacion) {
+        this.localizacion = localizacion;
+    }
+
 }
